@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #532e39, #2b3bcf);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 900px;
+  height: 500px;
+  background: linear-gradient(
+    to right,
+    #f59db6 50%,
+    #ef90b0 50%
+  );
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Buttons */
+.btn {
+  border: none;
+  background: #fff;
+  padding: 20px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.new-game {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Players */
+.players {
+  display: flex;
+  height: 100%;
+}
+
+.player {
+  flex: 1;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.player h2 {
+  font-size: 28px;
+  letter-spacing: 5px;
+}
+
+.score {
+  font-size: 90px;
+  color: #6c102d;
+  margin: 20px 0 40px;
+}
+
+.current {
+  width: 140px;
+  margin: 0 auto;
+  background: #c33764;
+  color: white;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.current p {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.current span {
+  font-size: 30px;
+}
+
+/* Dice */
+.dice {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  background: white;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  font-size: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Controls */
+.controls {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
